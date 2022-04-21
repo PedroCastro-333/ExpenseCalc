@@ -1,0 +1,25 @@
+.valores{
+    background-color: var(--darkGrey);
+
+    padding: 2.5rem;
+
+    border-radius: 20px;
+
+    color: var(--grey);
+
+    border: 1px dashed var(--orange);
+
+    display: flex;
+
+    flex-direction: column;
+    
+    gap: 1.5rem;
+}
+
+.valores > h4{
+    font-size: 1.5rem;
+}
+
+.valores > h2{
+    font-size: 1.5rem;
+}

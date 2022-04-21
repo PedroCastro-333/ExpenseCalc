@@ -1,0 +1,35 @@
+:root{
+    --darkGrey: #222831;
+    --grey: #99a6bb;
+    --orange: #fd7014;
+    --white: #eeeeee;
+
+}
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+
+}
+
+.container{
+    max-width: 960px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0 15px;
+}
+
+.main__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+    align-items: center;
+    justify-items: center;
+}

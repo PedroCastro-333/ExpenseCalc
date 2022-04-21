@@ -1,0 +1,78 @@
+.valor {
+  color: var(--orange);
+
+  font-weight: 600;
+
+  position: relative;
+
+  background-color: var(--darkGrey);
+
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+
+  padding: 1rem;
+
+  min-height: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  width: 300px;
+}
+
+.valor::after {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 100%;
+
+  background-color: green;
+
+  border-radius: 10px 0 0px 10px;
+
+  left: 0;
+  top: 0;
+}
+
+.valor.saida::after {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 100%;
+
+  background-color: red;
+
+  border-radius: 10px 0 0px 10px;
+
+  left: 0;
+  top: 0;
+}
+
+.valor > button {
+  background-color: transparent;
+
+  border: 1px solid var(--orange);
+
+  padding: 5px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+
+  color: var(--orange);
+}
+
+.valor > button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
